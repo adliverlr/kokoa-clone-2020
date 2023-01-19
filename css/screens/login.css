@@ -1,0 +1,56 @@
+
+.welcome-header {
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.welcome-header__title{
+font-size: 25px;
+margin-bottom: 20px;
+}
+
+.welcome-header__next{
+width:60%;
+opacity:0.7;
+}
+#login-form{
+display:flex;
+flex-direction: column;
+margin: 15px 0px;
+}
+#login-form input{
+padding: 10px 0px;
+border: none;
+font-size:18px;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+margin:0px 30px;
+margin-bottom: 25px;
+
+}
+
+#login-form input::placeholder{
+color:rgba(0,0,0,0.4);
+}
+/*글자 색깔 회색으로 바꾸는 코드 (위에꺼) */
+
+#login-form input:not([type="submit"]) {
+border-bottom: 1px solid rgba(0,0,0,0.2);
+transition: border-color 0.3s ease-in-out;
+}
+#login-form input:focus {
+border-color: var(--yellow);}
+
+#login-form input[type="submit"]{
+background-color: var(--yellow); 
+cursor:pointer;
+padding:20px 0px;
+border-radius:5px;
+}
+#login-form a{
+text-align: center;
+text-decoration: none;
+color: inherit;
+font-size: 13px;
+}
